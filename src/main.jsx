@@ -5,6 +5,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Home from './routes/Home.jsx'
 import Produtos from './routes/Produtos.jsx'
 import Sobre from './routes/Sobre.jsx'
+import { GlobalStyle } from './styles/GlobalStyle.jsx'
 
 const router = createBrowserRouter([
   {
@@ -33,5 +34,6 @@ const router = createBrowserRouter([
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <RouterProvider router = {router}/>
+    <GlobalStyle/>
   </StrictMode>,
 )
