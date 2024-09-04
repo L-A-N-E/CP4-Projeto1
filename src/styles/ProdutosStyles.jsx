@@ -1,0 +1,86 @@
+import styled from 'styled-components';
+
+
+export const ProdutosStyle = styled.div`
+.card {
+    cursor:pointer;
+    position: relative;
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 1rem;
+    width: 14rem;
+    background-color: ${props => props.theme.background};
+    border-radius: 1rem;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.5);
+}
+
+
+.image_container {
+display:flex;
+align-items:center;
+justify-content:center;
+position: relative;
+width: 100%;
+height: 8rem;
+border-radius: 0.5rem;
+}
+
+img {
+    overflow-y:visible;
+    overflow-x:visible;
+    width: 150px;
+    height: 150px;
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.3)
+}
+
+.title {
+width: 100%;
+font-size: 1rem;
+font-weight: 600;
+color: ${props => props.theme.color};
+text-wrap: nowrap;
+}
+
+.action {
+display: flex;
+align-items: center;
+gap: 1rem;
+}
+
+.price {
+font-size: 1.5rem;
+font-weight: 700;
+color: ${props => props.theme.color};
+}
+
+.cart-button {
+cursor: pointer;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 0.25rem;
+padding: 0.5rem;
+width: 100%;
+background-color: ${props => props.theme.background};
+font-size: 0.75rem;
+font-weight: 500;
+color: ${props => props.theme.color};
+border: 2px solid ${props => props.theme.color};
+border-radius: 0.5rem;
+}
+.cart-button:hover{
+    background-color: ${props => props.theme.color};
+    color: ${props => props.theme.background};
+}
+
+.cart-button .cart-icon {
+width: 1rem;
+}
+
+`;
