@@ -5,7 +5,10 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Home from './routes/Home.jsx'
 import Produtos from './routes/Produtos.jsx'
 import Sobre from './routes/Sobre.jsx'
+import Contato from './routes/Contato.jsx'
+
 import { GlobalStyle } from './styles/GlobalStyle.jsx'
+
 
 const router = createBrowserRouter([
   {
@@ -25,6 +28,10 @@ const router = createBrowserRouter([
       {
         path:'/sobre',
         element:<Sobre/>
+      },
+      {
+        path:'/contato',
+        element:<Contato/>
       }
     ]
   }
