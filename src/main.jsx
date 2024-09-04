@@ -7,6 +7,9 @@ import Produtos from './routes/Produtos.jsx'
 import Sobre from './routes/Sobre.jsx'
 import Contato from './routes/Contato.jsx'
 
+import { GlobalStyle } from './styles/GlobalStyle.jsx'
+
+
 const router = createBrowserRouter([
   {
     path:'/',
@@ -38,5 +41,6 @@ const router = createBrowserRouter([
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <RouterProvider router = {router}/>
+    <GlobalStyle/>
   </StrictMode>,
 )
