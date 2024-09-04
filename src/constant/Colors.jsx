@@ -6,4 +6,17 @@ const Colors = {
     black: '#0D0D0D'
 }
 
+export const lightTheme = {
+    background: Colors.green1,
+    color: Colors.black,
+    borderColor: Colors.black
+  };
+  
+  export const darkTheme = {
+    background: Colors.black,
+    color: Colors.green3,
+    borderColor: Colors.green3
+  };
+  
+
 export default Colors
