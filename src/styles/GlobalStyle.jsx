@@ -9,7 +9,6 @@ export const GlobalStyle = createGlobalStyle`
         padding: 0;
         box-sizing: border-box;
         font-family: "Montserrat", system-ui;
-        overflow: hidden;
-        transition: ease 1s;
+        text-decoration: none;
     }
 `

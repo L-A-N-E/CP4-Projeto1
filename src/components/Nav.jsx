@@ -8,7 +8,8 @@ export const Nav = ({toggleTheme}) => {
     <NavStyle>
     <header className="nav">
         <div className="container">
-            <h1 className="logo">Centouro</h1>
+            <Link to="/"><h1 className="logo">Centauro</h1></Link>
+
             <ul>
                 <Link to={'/'} className='link'>Home</Link>
                 <Link to={'/produtos'} className='link'>Produtos</Link>

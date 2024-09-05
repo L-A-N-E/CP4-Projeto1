@@ -19,6 +19,7 @@ export const NavStyle = styled.header`
         font-size: 2rem;
         font-weight: 800;
         text-transform: uppercase;
+        text-decoration: none;
         color:${props => props.theme.color};
     }
 
