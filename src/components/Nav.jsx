@@ -9,6 +9,7 @@ export const Nav = ({toggleTheme}) => {
     <header className="nav">
         <div className="container">
             <Link to="/"><h1 className="logo">Centauro</h1></Link>
+
             <ul>
                 <Link to={'/'} className='link'>Home</Link>
                 <Link to={'/produtos'} className='link'>Produtos</Link>

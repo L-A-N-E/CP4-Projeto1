@@ -1,7 +1,20 @@
 import styled from 'styled-components';
 
 
-export const ProdutosStyle = styled.div`
+export const ProdutosStyle = styled.section`
+.products{
+    background-color:${props=>props.theme.background}
+}
+
+.cards-tenis{
+display:flex;
+justify-content:center;
+align-items:center;
+height:45vh;
+gap:2rem;
+flex-wrap:wrap;
+}
+
 .card {
     cursor:pointer;
     position: relative;
@@ -9,10 +22,10 @@ export const ProdutosStyle = styled.div`
     align-items:center;
     flex-direction: column;
     gap: 0.75rem;
-    padding: 1rem;
+    padding: 2rem;
     width: 14rem;
-    background-color: ${props => props.theme.background};
-    border-radius: 1rem;
+    background-color: ${props => props.theme.color};
+    border-radius: 5px;
     box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.5);
 }
 
@@ -43,7 +56,7 @@ img:hover {
 width: 100%;
 font-size: 1rem;
 font-weight: 600;
-color: ${props => props.theme.color};
+color: ${props => props.theme.background};
 text-wrap: nowrap;
 }
 
@@ -56,7 +69,7 @@ gap: 1rem;
 .price {
 font-size: 1.5rem;
 font-weight: 700;
-color: ${props => props.theme.color};
+color: ${props => props.theme.background};
 }
 
 .cart-button {
@@ -71,7 +84,7 @@ background-color: ${props => props.theme.background};
 font-size: 0.75rem;
 font-weight: 500;
 color: ${props => props.theme.color};
-border: 2px solid ${props => props.theme.color};
+border: 2px solid ${props => props.theme.background};
 border-radius: 0.5rem;
 }
 .cart-button:hover{
@@ -83,4 +96,31 @@ border-radius: 0.5rem;
 width: 1rem;
 }
 
+.swiper {
+    width: 100%;
+    height:425px;
+    cursor:grab;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+  /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
 `;
+
+
