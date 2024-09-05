@@ -18,6 +18,7 @@ export const NavStyle = styled.header`
     .nav .logo{
         font-size: 2rem;
         font-weight: 800;
+        text-transform: uppercase;
         color:${props => props.theme.color};
     }
 
@@ -33,16 +34,16 @@ export const NavStyle = styled.header`
         text-transform: uppercase;
         text-decoration: none;
         color:${props => props.theme.color};;
-        font-weight: 800;
+        font-weight: 400;
     }
 
-    /* Estilo do botão */
     .botaoTema button {
         background-color: ${props => props.theme.background};
         color:${props => props.theme.color};
         padding: 8px 16px;
         font-size: 1rem;
-        font-weight: bold;
+        font-weight: 900;
+        text-transform: uppercase;
         border: none;
         border-radius: 20px;
         cursor: pointer;
