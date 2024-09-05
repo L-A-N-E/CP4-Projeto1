@@ -1,9 +1,14 @@
 import React from 'react'
+import { FooterStyle } from '../styles/FooterStyle'
 
 export const Footer = () => {
     return (
         <>
-        <h1>Footer</h1>
+        <FooterStyle>
+            <footer>
+                <h5>@-2024-Todos-os-Direitos-Reservados</h5>
+            </footer>
+        </FooterStyle>
         </>
     )
 }
