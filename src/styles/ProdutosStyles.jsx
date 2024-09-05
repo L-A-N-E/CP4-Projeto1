@@ -27,9 +27,18 @@ flex-wrap:wrap;
     background-color: ${props => props.theme.color};
     border-radius: 5px;
     box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
+.cards-tenis:hover .card {
+    transform: scale(0.9);
+    opacity: 0.8;
+}
 
+.cards-tenis .card:hover{
+    transform: scale(1.2);
+    opacity:1;
+}
 .image_container {
 display:flex;
 align-items:center;
@@ -40,17 +49,18 @@ height: 8rem;
 border-radius: 0.5rem;
 }
 
-img {
+.produto {
     overflow-y:visible;
     overflow-x:visible;
-    width: 150px;
-    height: 150px;
+    width: 210px;
+    height: auto;
     transition: transform 0.3s ease;
 }
 
-img:hover {
-    transform: scale(1.3)
+.produto:hover {
+    transform: scale(1.2)
 }
+
 
 .title {
 width: 100%;
@@ -105,7 +115,7 @@ width: 1rem;
 .swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: #fff;
+    background: ${props=>props.theme.background};
 
   /* Center slide text vertically */
     display: flex;
