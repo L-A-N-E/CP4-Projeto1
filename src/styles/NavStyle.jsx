@@ -12,7 +12,7 @@ export const NavStyle = styled.header`
         justify-content: space-between;
         align-items: center;
         width: 100%;
-        height: 70px;
+        height: 10vh;
     }
 
     .nav .logo{
@@ -24,13 +24,13 @@ export const NavStyle = styled.header`
     .nav ul{
         display: flex;
         align-items: center;
+        gap: 2rem;
         list-style: none;
     }
 
     .nav ul .link{
         font-size: 1.2rem;
         text-transform: uppercase;
-        padding: 10px 20px;
         text-decoration: none;
         color:${props => props.theme.color};;
         font-weight: 800;
@@ -46,8 +46,6 @@ export const NavStyle = styled.header`
         border: none;
         border-radius: 20px;
         cursor: pointer;
-        transition: background-color;
-        margin-left: 20px; /* Espaçamento entre o botão e o último link */
     }
 
     .botaoTema button:hover {
