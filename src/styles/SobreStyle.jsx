@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import Colors from '../constant/Colors';
 
 export const SobreStyle = styled.section`
   .container {
@@ -17,7 +18,7 @@ export const SobreStyle = styled.section`
       padding: 1.5rem;
 
       .h1-sobre {
-        font-size: 40px;
+        font-size: 3rem;
         text-transform: uppercase;
         border-bottom: solid 1px ${props => props.theme.borderColor};
         color: ${props => props.theme.color};
@@ -27,6 +28,16 @@ export const SobreStyle = styled.section`
         font-size: 1.1rem;
         text-align: justify;
         color: ${props => props.theme.color};
+      }
+    }
+
+    .img-sobre{
+      border: solid 4px ${props => props.theme.color};
+      padding: 10px;
+      img{
+        width: 100%;
+        height: 70vh;
+        border: solid 4px ${props => props.theme.color};
       }
     }
   }
