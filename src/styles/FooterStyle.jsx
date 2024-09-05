@@ -9,7 +9,8 @@ export const FooterStyle = styled.footer `
         display: grid;
         align-items:center;
         justify-content: center;
-        background-color: ${Colors.green1};
+        background-color: ${props => props.theme.background};
+        color:${props => props.theme.color};
     }
 
 `
