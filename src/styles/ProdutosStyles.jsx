@@ -36,7 +36,8 @@ export const ProdutosStyle = styled.section`
     }
     .image_container img {
     max-width: 100%;
-    height: auto;
+    height: 120px;
+    width:auto;
     object-fit: cover;
     transition: transform 0.3s ease;
     }

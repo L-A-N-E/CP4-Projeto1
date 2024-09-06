@@ -6,7 +6,6 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import image1 from '../assets/tenisdecorrida.png';
 import banner1 from '../assets/banner1.jpg'
 import banner2 from '../assets/banner2.jpg'
 import banner3 from '../assets/banner3.jpg'
@@ -36,7 +35,7 @@ return (
                 <img className="produto" id="produto1" src={produto1} alt="Produto1" />
             </div>
             <div className="title">
-                <span>Chuteira CR7</span>
+                <span>Chuteira NIKE</span>
             </div>
             <div className="action">
                 <div className="price">
