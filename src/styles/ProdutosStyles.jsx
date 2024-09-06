@@ -6,29 +6,24 @@ export const ProdutosStyle = styled.section`
         background-color:${props=>props.theme.background}
     }
 
-    .cards-tenis{
-        display:flex;
-        justify-content:center;
-        align-items:center;
-        height:45vh;
-        gap:2rem;
-        flex-wrap:wrap;
-    }
+    .cards-tenis {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
 
     .card {
-        cursor:pointer;
-        position: relative;
-        display: flex;
-        align-items:center;
-        flex-direction: column;
-        gap: 0.75rem;
-        padding: 2rem;
-        width: 14rem;
-        background-color: ${props => props.theme.color};
-        border-radius: 5px;
-        box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.5);
-        transition: transform 0.3s ease, opacity 0.3s ease;
-    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: ${props=>props.theme.color};
+    border-radius: 10px;
+    max-width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
     .cards-tenis:hover .card {
         transform: scale(0.9);
@@ -36,17 +31,14 @@ export const ProdutosStyle = styled.section`
     }
 
     .cards-tenis .card:hover{
-        transform: scale(1.2);
+        transform: scale(1.1);
         opacity:1;
     }
-    .image_container {
-        display:flex;
-        align-items:center;
-        justify-content:center;
-        position: relative;
-        width: 100%;
-        height: 8rem;
-        border-radius: 0.5rem;
+    .image_container img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease;
     }
 
     .produto {
@@ -109,6 +101,8 @@ export const ProdutosStyle = styled.section`
         width: 100%;
         height:425px;
         cursor:grab;
+        margin-top:50px;
+        margin-bottom:50px;
     }
 
     .swiper-slide {
@@ -129,6 +123,61 @@ export const ProdutosStyle = styled.section`
         object-fit: cover;
     }
 
+    @media (max-width: 1650px) {
+    .cards-tenis {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .cards-tenis:hover .card {
+        transform: scale(0.9);
+        opacity: 0.8;
+    }
+
+    .cards-tenis .card:hover{
+        transform: scale(1.1);
+        opacity:1;
+    }
+
+    .image_container img {
+    height:170px;
+    width:250px;
+    }
+    }
+    @media (max-width: 770px) {
+    .cards-tenis {
+        grid-template-columns: 1fr;
+    }
+
+    .card{
+        height:400px;
+        margin-left:30px;
+        margin-right:30px;
+    }
+
+    .image_container img {
+    width:300px;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    }
+
+    .cart-button {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    .price span {
+        font-size: 1.2rem;
+    }
+
+    .swiper{
+        height:300px;
+    }
+    }
 
 `;
 
