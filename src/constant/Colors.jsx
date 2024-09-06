@@ -9,13 +9,15 @@ const Colors = {
 export const lightTheme = {
     background: Colors.green1,
     color: Colors.black,
-    borderColor: Colors.black
+    borderColor: Colors.black,
+    color_home: Colors.white
   };
   
   export const darkTheme = {
     background: Colors.black,
     color: Colors.green3,
-    borderColor: Colors.green3
+    borderColor: Colors.green3,
+    color_home: Colors.green3
   };
   
 

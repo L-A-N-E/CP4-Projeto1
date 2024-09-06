@@ -20,21 +20,24 @@ export const SectionBanner = styled.section `
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            backdrop-filter: blur(15px) saturate(200%);
+            -webkit-backdrop-filter: blur(15px) saturate(200%);
+            background-color: rgba(0, 0, 0, 0.49);
+            border-radius: 12px;
+            padding: 2rem 1rem;
 
             h1 {
                 width: auto;
                 text-transform: uppercase;
-                color: ${Colors.black};
+                color: ${props => props.theme.color_home};
                 font-size: 4rem;
             }
 
             p {
                 text-align: center;
-                color: ${Colors.black};
+                color:  ${props => props.theme.color_home};;
             }
         }
     }
 
 `
-
-// export const SectionBanner = styled.section
