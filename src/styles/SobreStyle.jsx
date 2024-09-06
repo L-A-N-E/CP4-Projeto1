@@ -3,6 +3,7 @@ import Colors from '../constant/Colors';
 
 export const SobreStyle = styled.section`
   .container {
+    width: 100%;
     height: 80vh;
     display: flex;
     align-items: center;
@@ -40,5 +41,29 @@ export const SobreStyle = styled.section`
         border: solid 4px ${props => props.theme.color};
       }
     }
+  }
+  @media (max-width: 1276px) {
+        .container{
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+
+        .conteudo {
+            max-width: 700px;
+
+            .h1-sobre {
+              font-size: 2rem;
+            }
+
+            .p-sobre {
+              font-size: 1rem;
+            }
+        }
+
+        .img-sobre{
+          display: none;
+        }
+
+        }
   }
 `;
