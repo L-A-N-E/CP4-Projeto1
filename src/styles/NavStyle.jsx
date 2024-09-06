@@ -61,7 +61,7 @@ export const NavStyle = styled.header`
         color: ${props => props.theme.color}; 
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 830px) {
         .nav ul {
             display: none;
             position: absolute;
@@ -72,6 +72,7 @@ export const NavStyle = styled.header`
             gap: 1rem;
             padding: 20px;
             width: 200px;
+            z-index: 1000;
         }
 
         .nav ul.active {
