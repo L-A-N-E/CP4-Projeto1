@@ -144,10 +144,11 @@ export const ProdutosStyle = styled.section`
     }
 
     .image_container img {
-    height:170px;
-    width:250px;
+    height:150px;
+    width:200px;
     }
     }
+
     @media (max-width: 770px) {
     .cards-tenis {
         grid-template-columns: 1fr;
@@ -160,10 +161,12 @@ export const ProdutosStyle = styled.section`
     }
 
     .image_container img {
-    width:300px;
-    height: auto;
-    object-fit: cover;
-    transition: transform 0.3s ease;
+    height:300px;
+    width:250px;
+    }
+
+    .title{
+        font-size:25px;
     }
 
     .cart-button {
@@ -178,6 +181,8 @@ export const ProdutosStyle = styled.section`
     .swiper{
         height:300px;
     }
+
+    
     }
 
 `;
