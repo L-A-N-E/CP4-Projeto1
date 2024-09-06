@@ -13,6 +13,7 @@ export const ContatoStyle = styled.div`
         color: ${props => props.theme.color};
         margin-bottom: 20px;
         text-transform:uppercase;
+        text-align: center;
     }
 
     form {

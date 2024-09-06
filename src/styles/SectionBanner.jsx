@@ -29,6 +29,7 @@ export const SectionBanner = styled.section `
             h1 {
                 width: auto;
                 text-transform: uppercase;
+                text-align: center;
                 color: ${props => props.theme.color_home};
                 font-size: 4rem;
             }
@@ -39,5 +40,12 @@ export const SectionBanner = styled.section `
             }
         }
     }
+    @media (max-width: 800px) {
+        section{
+            div{
+                width: 80%;
+            }
+        }
+  }
 
 `
