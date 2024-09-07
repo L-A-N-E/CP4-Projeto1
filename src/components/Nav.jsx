@@ -14,7 +14,7 @@ export const Nav = ({ toggleTheme }) => {
             <NavStyle>
                 <header className="nav">
                     <div className="container">
-                        <Link to="/"><h1 className="logo">Centauro</h1></Link>
+                        <Link to="/"><h1 className="logo">Esportes</h1></Link>
 
                         {/* Ícone do menu hambúrguer */}
                         <div className="hamburger" onClick={toggleMenu}>
