@@ -25,7 +25,7 @@ export const SectionBanner = styled.section `
             background-color: rgba(0, 0, 0, 0.49);
             border-radius: 12px;
             padding: 2rem 1rem;
-            box-shadow: 1px 1px 100px ${Colors.white};
+            box-shadow: 1px 1px 100px ${props => props.theme.color_home};
 
             h1 {
                 width: auto;
